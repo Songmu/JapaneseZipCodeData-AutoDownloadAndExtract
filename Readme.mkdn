@@ -1,2 +1,15 @@
-## Auto Download And Extract Japanese Zip-Code Information
+## Auto Download And Extract Japanese Zip-Code Datas
 
+Auto generate datas for AjaxZip2. 
+
+## Usage
+
+    % zipaddr_data_auto_dl.pl
+
+And you would get zip datas by json format.
+
+## See Also
+
+AjaxZip2
+
+<http://www.kawa.net/works/ajax/ajaxzip2/ajaxzip2.html>

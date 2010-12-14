@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>ajaxzip2 smaple</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="ajaxzip2.js" charset="UTF-8"></script>
+<script type="text/javascript">AjaxZip2.JSONDATA = '../data';</script>
+<style type="text/css">
+#zip1, #zip2{
+  ime-mode: disabled;
+}
+#zip1{
+  width: 3em;
+}
+#zip2{
+  width: 4em;
+}
+#zipsample dl{
+  zoom: 1;
+}
+#zipsample dl:after{
+  display: block;
+  content: '';
+  clear: both;
+  height: 0.1px;
+  visibility: hidden;
+}
+#zipsample dt{
+  clear: both;
+  width: 5em;
+  float: left;
+}
+#zipsample dt{
+  width: 5em;
+  float: left;
+}
+
+
+</style>
+</head>
+<body>
+<form>
+<dl id="zipsample">
+<dt>郵便番号</dt>
+<dd>
+<input name="zip1" id="zip1" type="text" />－<input name="zip2" id="zip2" type="text" onkeyup="AjaxZip2.zip2addr('zip1','pref','city','zip2','street_area','street_area');" />
+<input type="button" value="住所入力" onclick="AjaxZip2.zip2addr('zip1','pref','city','zip2','street_area','street_area');" />
+</dd>
+<dt>県</dt>
+<dd>
+<select name="pref" id="pref">
+<option>北海道</option>
+<option>青森県</option>
+<option>岩手県</option>
+<option>宮城県</option>
+<option>秋田県</option>
+<option>山形県</option>
+<option>福島県</option>
+<option>栃木県</option>
+<option>群馬県</option>
+<option>茨城県</option>
+<option>埼玉県</option>
+<option>千葉県</option>
+<option>東京都</option>
+<option>神奈川県</option>
+<option>新潟県</option>
+<option>富山県</option>
+<option>石川県</option>
+<option>福井県</option>
+<option>山梨県</option>
+<option>長野県</option>
+<option>岐阜県</option>
+<option>静岡県</option>
+<option>愛知県</option>
+<option>三重県</option>
+<option>滋賀県</option>
+<option>京都府</option>
+<option>大阪府</option>
+<option>兵庫県</option>
+<option>奈良県</option>
+<option>和歌山県</option>
+<option>鳥取県</option>
+<option>島根県</option>
+<option>岡山県</option>
+<option>広島県</option>
+<option>山口県</option>
+<option>徳島県</option>
+<option>香川県</option>
+<option>愛媛県</option>
+<option>高知県</option>
+<option>福岡県</option>
+<option>佐賀県</option>
+<option>長崎県</option>
+<option>熊本県</option>
+<option>大分県</option>
+<option>宮崎県</option>
+<option>鹿児島県</option>
+<option>沖縄県</option>
+</select>
+</dd>
+<dt>市区町村</dt>
+<dd><input name="city" id="city" type="text" /></dd>
+<dt>町域・番地</dt>
+<dd><input name="street_area" id="street_area" type="text" /></dd>
+</dl>
+</form>
+
+</body>
+</html>
